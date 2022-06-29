@@ -1,0 +1,18 @@
+#myDIV{
+    background-color: coral;
+    border: 1px solid;
+    padding: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.demo{
+    margin-bottom: 200px;
+    height: 500px;
+    
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
