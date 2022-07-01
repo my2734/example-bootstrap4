@@ -12,9 +12,55 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-  
-
+<body> 
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-4" id="myScrollspy">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a href="#section1" class="nav-link active">Section 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section2" class="nav-link">Section 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section3" class="nav-link">Section 3</a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Section 4
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#section41" class="dropdown-item">Link 1</a>
+                            <a href="#section42" class="dropdown-item">Link 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-sm-9 col-8">
+                <div id="section1" class="bg-success">    
+                    <h1>Section 1</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                  </div>
+                  <div id="section2" class="bg-warning"> 
+                    <h1>Section 2</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                  </div>        
+                  <div id="section3" class="bg-secondary">         
+                    <h1>Section 3</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                  </div>
+                  <div id="section41" class="bg-danger">         
+                    <h1>Section 4-1</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                  </div>      
+                  <div id="section42" class="bg-info">         
+                    <h1>Section 4-2</h1>
+                    <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                  </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <h1>Blockquotes</h1>
         <p>The blockquote element is used to present content from another source:</p>
@@ -3060,14 +3106,136 @@ line breaks.
         <h2>Toast Example</h2>
         <p>In this example, we use data-autohide="false" to show the toast by default. You can close it by clicking on the close (x) icon inside the toast header.</p>
         <div class="toast">
-            <div class="toast-header">
-                <strong class="">Toast Header</strong>
+            <div class="toast-header" data-autohide="false">
+                <strong class="text-primary mr-auto">Toast Header</strong>
+                <small class="text-muted">5 min ago</small>
+                <button type="button" class="ml-1 mb-2 close" data-dismiss="toast">&times;</button>
             </div>
             <div class="toast-body">
                 Some text inside the toast body
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <h2>Border</h2>
+        <p>Use the border classes to add or remove borders form an element:</p>
+        <span class="border"></span>
+        <span class="border border-0"></span>
+        <span class="border border-top-0"></span>
+        <span class="border border-right-0"></span>
+        <span class="border border-bottom-0"></span>
+        <span class="border border-left=0"></span>
+    </div>
+
+    <div class="container">
+        <h2>Border</h2>
+        <p>Use a contextual border color to add a color to the border:</p>
+        <span class="border border-primary"></span>
+        <span class="border border-secondary"></span>
+        <span class="border border-success"></span>
+        <span class="border border-danger"></span>
+        <span class="border border-warning"></span>
+        <span class="border border-info"></span>
+        <span class="border border-light"></span>
+        <span class="border border-dark"></span>
+        <span class="border border-white"></span>
+    </div>
+
+    <div class="container">
+        <h2>Border</h2>
+        <p>Round the corner of an element with the rounded classes</p>
+        <span class="rounded-sm"></span>
+        <span class="rounded"></span>
+        <span class="rounded-lg"></span>
+        <span class="rounded-top"></span>
+        <span class="rounded-right"></span>
+        <span class="rounded-bottom"></span>
+        <span class="rounded-left"></span>
+        <span class="rounded-circle"></span>
+        <span class="rounded-0"></span>
+    </div>
+
+    <div class="container">
+        <h2>Float</h2>
+        <p>Float an element to the rght with the .float-right class or to the left with .float-left, and clear floats with the .clearfix class.</p>
+        <div class="clearfix">
+            <span class="float-left">Float left</span>
+            <span class="float-right">Float right</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Responsive Float</h2>
+        <p>Float an element to the left or to the right depending on screen width, with the responsive float classes .float-*-left|right (where * is sm, md, lg or xl).</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="clearfix">
+            <div class="float-sm-right">Float right on small screens or wider</div>
+            <div class="float-md-right">Float right on medium screens or wider</div>
+            <div class="float-lg-right">Float right on large screens or wider</div>
+            <div class="float-xl-right">Float right on extra large screens or wider</div>
+            <div class="float-none">Float none</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Horizontal Centering</h1>
+        <p>Center an element with the .mx-auto class:</p>
+        <div class="mx-auto bg-warning" style="width:150px;">Centered</div>
+    </div>
+
+    <div class="container">
+        <h2>Width Utilities</h2>
+        <p>Set the width of an element width the w-* class</p>
+        <div class="w-25 bg-warning">Width 25%</div>
+        <div class="w-50 bg-warning">Width 50%</div>
+        <div class="w-75 bg-warning">Width 75%</div>
+        <div class="w-100 bg-warning">Width 100%</div>
+        <div class="mw-100 bg-warning">Max Width 100%</div>
+    </div>
+
+    <div class="container">
+        <h1>Height Utilities</h1>
+        <p>Set the height of an elementwidth the w-* class</p>
+        <div style="height: 200px; background-color: #ddd">
+            <div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
+            <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+            <div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
+            <div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
+            <div class="mh-100 d-inline-block p-2 bg-warning" style="height: 500px;">Max Height 100</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Spacing Utilities</h2>
+        <p>Set the spacing of an element with the {property}{side}-{breakpoint}-{size} class Omit breakpoint if you want the padding or margin to work on all screen sizes.</p>
+        <div class="pt-4 bg-warning">I only have a top padding (1.5rem = 24px)</div>
+        <div class="p-5 bg-success">I have a padding on all sides (3rem = 48px)</div>
+        <div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem = 48px) and a bottom padding (3rem = 48px)</div>
+    </div>
+
+    <div class="container">
+        <h1>Shadow</h1>
+        <p>Use the shadow-classes to add shadows to an element:</p>
+        <div class="shadow-none bg-light p-4 mb-3">No shadow</div>
+        <div class="shadow-sm bg-white p-4 mb-3">Small shadow</div>
+        <div class="shadow bg-white p-4 mb-3">Default shadow</div>
+        <div class="shadow-lg bg-white p-4 mb-3">Large shadow</div>
+    </div>
+
+    <div class="container">
+        <h1>Vertical Align</h1>
+        <p>Change the alignment of elements with the align classes (only works on inline, inline-block, inline-table and table cell elements):</p>
+        <span class="align-baseline">baseline</span>
+        <span class="align-top">top</span>
+        <span class="align-middle">middle</span>
+        <span class="align-bottom">bottom</span>
+        <span class="align-text-top">text-top</span>
+        <span class="align-text-bottom">text-bottom</span>
+    </div>
+
+
+   
   
 
     
@@ -3113,6 +3281,10 @@ line breaks.
         //         $('.toast').toast('show');
         //     });
         // });
+
+        $(document).ready(function(){
+            $('.toast').toast('show');
+        });
     </script>
 </body>
 </html>
