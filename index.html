@@ -7,10 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body> 
     <div class="container-fluid">
@@ -3425,10 +3426,481 @@ line breaks.
     </div>
 
     <div class="container">
-        
+        <h2>Display None Responsive</h2>
+        <p>Use the d-none class to hide an element. Use any of the d-*-none classes to control WHEN the element should be hidden on a specific screen width.</p>
+        <div class="d-none bg-success">Hidden DIV</div>
+        <div class="d-sm-none bg-success">d-sm-none</div>
+        <div class="d-md-none bg-success">d-dm-none</div>
+        <div class="d-lg-none bg-success">d-lg-none</div>
+        <div class="d-none bg-success">d-xl-none</div>
+    </div>
+
+    <div class="container">
+        <h2>Display Inline</h2>
+        <p>Use the d-inline class to make an element display inline</p>
+        <div class="d-inline">Inline DIV</div>
+        <p class="d-inline">Inline P.</p>
+    </div>
+
+    <div class="container">
+        <h2>Display inline Responsive</h2>
+        <p>Use the d-inline class to make an element display inline. Use any of the d-*-inline classes to control WHEN the element should be inline on a specific screen width.</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="d-inline bg-success">Inline DIV</div>
+        <div class="d-sm-inline bg-success">d-sm-inline</div>
+        <div class="d-md-inline bg-success">d-md-inline</div>
+        <div class="d-lg-inline bg-success">d-lg-inline</div>
+        <div class="d-inline bg-success">d-xl-inline</div>
+    </div>
+
+    <div class="container">
+        <h2>Display Inline Block</h2>
+        <p>Use the d-inline-block class to make an element display inline block</p>
+        <div class="d-inline-block">Inline block DIV</div>
+        <div class="d-inline-block">Inline block DIV</div>
+    </div>
+
+    <div class="container">
+        <h2>Display Inline Block Responsive</h2>
+        <p>Use the d-inline-block class to make an element display inline block. Use any of the d-*-inline-block classes to control WHEN the element should be inline block on a specific screen width.</p>
+        <p>Resize the browser window to see the effect</p>
+        <div class="d-inline-block bg-success">Inline block DIV</div>
+        <div class="d-sm-inline-block bg-success">d-sm-inline-block</div>
+        <div class="d-md-inline-block bg-success">d-md-inline-block</div>
+        <div class="d-lg-inline-block bg-success">d-lg-inline-block</div>
+        <div class="d-inline-block bg-success">d-xl-inline-block</div>
+    </div>
+
+    <div class="container">
+        <h2>Display Table</h2>
+        <p>Use the d-table, d-table-row and d-table-cell to make elements display as tables:</p>
+        <div class="d-table" style="width: 100%">
+            <div class="d-table-row" style="width: 100%">
+                <div class="d-table-cell">
+                    <h4>Left Cell</h4>
+                    <p>Some text...</p>
+                </div>
+                <div class="d-table-cell">
+                    <h4>Middle Cell</h4>
+                    <p>Some text...</p>
+                </div>
+                <div class="d-table-cell">
+                    <h4>Right Cell</h4>
+                    <p>Some text...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Display Table Responsive</h2>
+        <p>Use the d-table, d-table-row and d-table-cell to make elements display as tables.</p>
+        <p>Use any of the sm, md, lg, xl classes (d-*-*) to make an element display as a table on different screen sizes.</p>
+        <p>Resize the browser window to see the effect.</p>
+
+        <h2>DIV as Table</h2>
+        <div class="d-table bg-warning" style="width: 100%">
+            <div class="d-table-row" style="width: 100%">
+                <div class="d-table-cell">
+                    <h4>Left Cell</h4>
+                    <p>Some text..</p>
+                </div>
+
+                <div class="d-table-cell">
+                    <h1>Middle Cell</h1>
+                    <p>Some text..</p>
+                </div>
+
+                <div class="d-table-cell">
+                    <h4>Right Cell</h4>
+                    <p>Some text...</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h2>Responsive Table</h2>
+        <div class="d-md-table bg-success" style="width: 100%">
+            <div class="d-md-table-row" style="width: 100%">
+                <div class="d-md-table-cell">
+                    <h4>Left Cell</h4>
+                    <p>Some text...</p>
+                </div>
+
+                <div class="d-md-table-cell">
+                    <h4>Middle Cell</h4>
+                    <p>Some text...</p>
+                </div>
+
+                <div class="d-md-table-cell">
+                    <h4>Right Cell</h4>
+                    <p>Some text..</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
+    <div class="container">
+        <h2>Flex</h2>
+        <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+        <div class="d-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Flex</h2>
+        <p>To create a flexbox container, add the d-flex class. Use any of the d-*-flex classes to control WHEN the element should be a flex element on a specific screen width.</p>
+        <p>Resize the browser window to see the effect.</p>
+        <div class="d-flex bg-success">d-flex</div>
+        <div class="d-sm-flex bg-success">d-sm-flex</div>
+        <div class="d-md-flex bg-success">d-md-flex</div>
+        <div class="d-md-flex bg-success">d-md-flex</div>
+        <div class="d-lg-flex bg-success">d-lg-flex</div>
+        <div class="d-xl-flex bg-success">d-xl-flex</div>
+    </div>
+
+    <div class="container">
+        <h2>Inline Flex</h2>
+        <p>To create an inline flexbox container, use the d-inline-flex class: </p>
+        <div class="d-inline-flex p-3 bg-secondary text-white">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Horizontal Direction</h2>
+        <p>Use .flex-row to make the flex items appear side default:</p>
+        <div class="d-flex flex-row bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 4</div>
+        </div>
+
+        <br>
+        <p>Use .flex-row-reverse to right-aligh the derection: </p>
+        <div class="d-flex flex-row-reverse bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Vertical Direction</h2>
+        <p>Use .flex-column to display the flex items vertical (on top of each other):</p>
+        <div class="d-flex flex-column">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+        <p>Use .flex-column-reverse to reverse the vertical direction:</p>
+        <div class="d-flex flex-column-reverse">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Justify content</h2>
+        <p>Use the .justify-content-* classes to change the alighment of flex item. Choose from start (default), end, center, between or around:</p>
+        <div class="d-flex justify-content-start mb-3 bg-secondary">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-end mb-3 bg-secondary">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-center mb-3 bg-secondary">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-between mb-3 bg-secondary">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-between mb-3 bg-secondary">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex justify-content-around mb-3 bg-secondary">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Fill/Equal Widths</h2>
+        <p>Use .flex-fill on flex items to force them into equal width: </p>
+        <div class="d-flex mb-3">
+            <div class="p-3 bg-info flex-fill">Flex item 1</div>
+            <div class="p-3 bg-warning flex-fill">Flex item 2</div>
+            <div class="p-3 bg-primary flex-fill">Flex item 3</div>
+        </div>
+        <p>Example without .flex-pill:</p>
+        <div class="d-flex bg-secondary mb-3">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Grow</h2>
+        <p>Use .flex-grow-1 on a flex item to take up the rest of the space:</p>
+        <div class="d-flex bg-secondary">
+            <div class="p-3 bg-info">Flex item 1</div>
+            <div class="p-3 bg-warning flex-grow-1">Flex item 2</div>
+            <div class="p-3 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Order</h2>
+        <p>Change the visual order of a specific flex item(s) with the .order classes. Valid classes are from 0 to 12:</p>
+        <div class="d-flex">
+            <div class="p-3 bg-info order-3">Flex item 1</div>
+            <div class="p-3 bg-warning order-2">Flex item 2</div>
+            <div class="p-3 bg-primary order-3">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Auto Margins</h2>
+        <p>Easily add auto margins to flex items with .mr-auto (push items to the right), or by using .ml-auto (push items to the left):</p>
+        <div class="d-flex bg-secondary">
+            <div class="p-2 bg-info mr-auto">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        <div class="d-flex mt-3 bg-secondary">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary ml-auto">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Horizontal Direction</h2>
+        <p>Use .flex-row to make the flex items appear side by side (default).</p>
+        <p>Use .flex-sm|md|lg|xl-row to achieve this on a specific screen size. Resize the browser window to see the effect</p>
+        <p><code>flex-row:</code></p>
+        <div class="d-flex flex-row bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        
+        <p><code>flex-sm-row:</code></p>
+        <div class="d-sm-flex flex-sm-row bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        
+        <p><code>flex-md-row:</code></p>
+        <div class="d-md-flex flex-md-row bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        
+        <p><code>flex-lg-row:</code></p>
+        <div class="d-lg-flex flex-lg-row bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+        
+        <p><code>flex-xl-row:</code></p>
+        <div class="d-xl-flex flex-xl-row bg-secondary mb-3">
+            <div class="p-2 bg-info">Flex item 1</div>
+            <div class="p-2 bg-warning">Flex item 2</div>
+            <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>My Icon <i class="fas fa-heart"></i></h2>
+        <p>An icon along with some text: <i class="fas fa-thumbs-up"></i></p>
+    </div>
+    <div class="container">
+        <p>Others:</p>
+        <i class="fas fa-cloud"></i>
+        <i class="fas fa-coffee"></i>
+        <i class="fas fa-car"></i>
+        <i class="fas fa-file"></i>
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+        <h2>Media Object</h2>
+        <p>Creat a media Object with the .media and media-body classes: </p>
+        <div class="media border p-3">
+            <img src="./img/user1.jpeg" class="mr-3 mt-3 rounded-circle" style="width:60px;" alt="">
+            <div class="media-body">
+                <h4>John Doe <i>Poted on February 19, 2016</i></h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore saepe delectus excepturi. Voluptate harum molestias impedit quibusdam dolor itaque dolorum unde non corrupti et. Voluptatum asperiores error tempore blanditiis distinctio!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Nested Media Object</h2>
+        <p>Media object can also be nested (a media object inside a media object):</p>
+        <div class="media border p-3">
+            <img src="./img/user1.jpeg" class="mr-3 mt-3 rounded-circle" style="width: 60px;" alt="">
+            <div class="media-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, dolor sapiente ex non tenetur quis ullam, exercitationem neque, voluptate vitae nam quidem recusandae dolores repellendus nisi inventore deserunt animi quaerat.</p>
+                <div class="medie p-3">
+                    <div class="media-body">
+                        <img src="./img/user1.jpeg" class="mr-3 mt-3 rounded-circle" style="width: 60px;" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam sunt mollitia similique. Laudantium, harum quas recusandae doloribus consectetur facere repudiandae tempore molestias, cumque quisquam, ipsa sit distinctio. Eum, tempore aliquid.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam repudiandae voluptatem pariatur reiciendis, alias aperiam perspiciatis suscipit, aliquam odit iusto non beatae unde mollitia eos nisi? Provident ratione eveniet dolorum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Media Object</h2>
+        <p>Place the media object to the top, middle or at the bottom with the flex untilities, align-self-* classes:</p>
+        <br>
+        <!-- Media Top -->
+        <div class="media">
+            <img src="./img/user1.jpeg" class="align-self-start mr-3" style="width: 60px;" alt="">
+            <div class="media-body">
+                <h4>Media Top</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloremque unde obcaecati, nemo a beatae facilis sed earum? Itaque quibusdam delectus commodi eius dicta. Velit ipsum laboriosam eum possimus quo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas labore soluta tempore doloribus repellat esse ad porro eius officia magni exercitationem quasi quibusdam obcaecati aliquam alias dolores at, laudantium numquam!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores mollitia odit, necessitatibus suscipit corporis, esse cum aliquid quaerat quia sunt ab quibusdam sequi. Rerum, nemo in eum perferendis voluptates nam.</p>
+            </div>
+        </div>
+        <!-- Media middle -->
+        <div class="media">
+            <img src="./img/user1.jpeg" class="align-self-center mr-3" style="width: 70px;" alt="">
+            <div class="media-body">
+                <h4>Media Middle</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, ducimus aut corporis aliquid maiores quasi odio aspernatur nemo laboriosam sint non aliquam est, numquam harum optio commodi voluptatibus obcaecati. Dignissimos.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reiciendis corrupti numquam tenetur cupiditate inventore hic vitae quam at iure, ad tempore voluptatibus nostrum illo commodi eaque provident ipsa facilis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et doloribus cupiditate ex nobis, modi culpa hic fugiat, quasi nostrum dolor minus porro. Tenetur quae perferendis dolores nemo adipisci amet nihil.</p>
+            </div>
+        </div>
+        <!-- Media bottom -->
+        <div class="media">
+            <img src="./img/user1.jpeg" class="align-self-end mr-3" style="width: 60px;" alt="">
+            <div class="media-body">
+                <h4>Media Bottom</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis tempora perspiciatis! Sapiente quos libero, deserunt culpa unde totam nemo! Quo quod ea ullam. Voluptatum ipsa dolorem laborum a similique.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora impedit quam suscipit praesentium veritatis blanditiis, eos ipsam sequi quos magni mollitia quisquam. Non vero culpa quasi consectetur, quisquam eos?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure temporibus magnam sint assumenda quia, harum dignissimos cupiditate dolorem eos doloribus blanditiis sed vero aspernatur odit iusto autem ab repellendus.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Filterable Table</h2>
+        <p>Type something in the input field to search the table for first names, last names or name</p>
+        <input id="myInput" type="text" class="form-control" placeholder="Search..">
+        <table id="myTable" class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@mail.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@greatstuff.com</td>
+                </tr>
+                <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+    </div>  
+
+    <div class="container">
+        <h2>Filterable List</h2>
+        <p>Type something in the input field to search the list for specific items</p>
+        <input type="text" id="myinput2" class="form-control" placeholder="Search..">
+        <ul class="list-group mt-4" id="myList2">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">Fourth</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Filter Anything</h2>
+        <p>Type some thing in the input field to search for a speccific text inside the div element with id="myDIV":</p>
+        <input type="text" class="form-control" id="myInput3" placeholder="Search..">
+        <div class="mt-3" id="myDIV3">
+            <p>I am paraghaph</p>
+            <div class="">I am a div element inside div</div>
+            <button class="btn">I am a button</button>
+            <button class="btn btn-info">Another button</button>
+            <p>Another paragraph</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Basic Grid Structure</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>The first, second and third row will automatically stack on top of each other when the screen is less than 576px wide.</p>
+        <div class="container-fluid">
+            <!-- Control the columns width, and how they should apper on different devices -->
+            <div class="row mb-3">
+                <div class="col-sm-6" style="background-color: yellow">50%</div>
+                <div class="col-sm-6" style="background-color: orange">50%</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-4" style="background-color: yellow">33.333%</div>
+                <div class="col-sm-4" style="background-color:orange">33.333%</div>
+                <div class="col-sm-4" style="background-color: yellow">33.333%</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm" style="background-color:yellow">25%</div>
+                <div class="col-sm" style="background-color: orange">25%</div>
+                <div class="col-sm" style="background-color: yellow">25%</div>
+                <div class="col-sm" style="background-color: orange">25%</div>
+            </div>
+            
+        </div>
+    </div>
 
 
    
@@ -3478,9 +3950,21 @@ line breaks.
         //     });
         // });
 
+        // $(document).ready(function(){
+        //     $('.toast').toast('show');
+        // });
+
         $(document).ready(function(){
-            $('.toast').toast('show');
+            $("#myInput3").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myDIV3 *").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
         });
+        
+        
+
     </script>
 </body>
 </html>
